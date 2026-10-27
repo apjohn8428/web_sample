@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>게시판</title>
+</head>
+<body>
+     <!--공통 상단-->
+    <header> 
+        <div class="logo"><a href="index.html">JAEHYEONG COMPANY</a>
+        </div>
+        <nav>
+            <a href="index.html">홈</a>
+            <a href="#">회사소개</a>
+            <a href="#">제품소개</a>
+            <a href="board.html">게시판</a>
+        </nav>
+    </header>
+
+    <!--게시판 목록-->
+    <main>
+        <section class="page-title">
+            <h1>게시판</h1>
+            <p>JAEHYEONG PHARMA의 새로운 소식을 확인하세요</p>
+        </section>
+
+        <!--게시판 검색-->
+        <section class="content-section">
+            <div class="boardSearch">
+                <input type="text" id="searchText" placeholder="검색할 제목을 입력하세요">
+                <button type="button" onclick="">검색</button>
+            </div>
+
+        <!--게시판 목록 출력-->
+            <table class="boardTable">
+                <thead> <!--제목줄 태그-->
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성자</th>
+                        <th>작성일</th>
+                    </tr>
+                </thead>
+                <tbody id="boardList">
+                    <tr>
+                        <td>3</td>
+                        <td class="subject"><a href="#">올바른 의약품 복용 안내</a></td>
+                        <td>관리자</td>
+                        <td>2026.10.23</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td class="subject"><a href="#">재형 제약 홈페이지 오픈</a></td>
+                        <td>관리자</td>
+                        <td>2026.10.22</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td class="subject"><a href="#">신제품 연구개발 소식</a></td>
+                        <td>홍길동</td>
+                        <td>2026.10.21</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="boardBottom">
+                <div class="pageNumber">
+                    <a href="#">1</a>
+                    <a href="#">2</a>
+                    <a href="#">3</a>
+                </div>
+                <a href="#" class="button">글쓰기</a>
+            </div>
+        </section>
+    </main>
+
+    <!--공통 하단-->
+    <footer>
+        <p>JAEHYEONG PHARMA</p>
+        <p>주소: 서울특별시 건강로 123 | 대표번호:02-1234-5678</p>
+        <small>Copyright 2026 JAEHYEONG PHARMA All right reserved</small>
+    </footer>
+</body>
+</html>

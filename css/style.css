@@ -305,3 +305,35 @@ footer p {
     color: #075b91;
     padding-right: 10px;
 }
+
+/* 게시판 글쓰기 디자인 */
+form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdbe5;
+    border-radius: 5px;
+    font-family: inherit; /* input 안에 입력되는 글꼴이 상위 태그의 지정된 글꼴을 따라간다 */
+}
+
+form textarea {
+     width: 100%;
+    padding: 12px;
+    border: 1px solid #cbdbe5;
+    border-radius: 5px;
+    font-family: inherit;
+    resize: vertical; /* 세로 방향만 영역늘리기 허용 */
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    margin: 20px;
+}
